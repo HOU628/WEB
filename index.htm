@@ -40,7 +40,7 @@
         .opened .logo-wrap { opacity: 0; pointer-events: none; }
 
         /* --- 英雄區 --- */
-        .hero-info-section { width: 100%; height: 100vh; background: linear-gradient(var(--overlay-light), var(--overlay-light)), url('img/1.jpg') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
+        .hero-info-section { width: 100%; height: 100vh; background: linear-gradient(var(--overlay-light), var(--overlay-light)), url('https://drive.google.com/thumbnail?id=1DizQJHsiJ1vNCTEcD_HjIcymRIjh0yIE&sz=w4000') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
         .hero-info-section h1 { font-family: 'Cinzel'; font-size: 1.5rem; letter-spacing: 5px; margin-bottom: 5px; }
         .cursive-font { font-family: 'Parisienne', cursive; font-size: 5rem !important; margin: 10px 0; color: #ffffff; text-shadow: 0 2px 15px rgba(0,0,0,0.4); }
         
@@ -97,10 +97,10 @@
     <meta property="og:description" content="2026.03.28 珍豪大飯店 - 誠摯邀請您的參與">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://oliloveyuni.space/index.htm">
-    <meta property="og:image" content="https://oliloveyuni.space/img/1.jpg">
+    <meta property="og:image" content="https://drive.google.com/thumbnail?id=1DizQJHsiJ1vNCTEcD_HjIcymRIjh0yIE&sz=w4000">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="icon" href="https://drive.google.com/thumbnail?id=1d8QL7y_x49qNpLhwmiBxxDZHgJoipThY&sz=w444" type="image/png">
 </head>
 <body>
 
@@ -118,7 +118,7 @@
     </nav>
 
     <div id="gate-overlay" onclick="openGate()">
-        <div class="logo-wrap"><img src="img/logo.png" alt="Logo"></div>
+        <div class="logo-wrap"><img src="https://drive.google.com/thumbnail?id=1d8QL7y_x49qNpLhwmiBxxDZHgJoipThY&sz=w444" alt="Logo"></div>
         <div class="gate-door gate-left"></div>
         <div class="gate-door gate-right"></div>
     </div>
@@ -184,7 +184,7 @@
     </div>
 
     <div id="modal-invitation" onclick="closeModal()">
-        <img src="img/Wedding Invitation.png" alt="Wedding Invitation">
+        <img src="https://drive.google.com/thumbnail?id=1mGkEKyPadI83OrdvDJevVA7pf3aVCXRC/&sz=w1240" alt="Wedding Invitation">
     </div>
 
     <script>
@@ -233,11 +233,12 @@
 
         const gallery = document.getElementById('wedding-album');
         const photoTexts = ["故事開始於 2021 年的春天，那是我生命中最美的風景。", "我愛看妳笑，因為那是我心中最燦爛的陽光。", "瑣碎平淡的日常，因為妳的出現，都成了熠熠生輝的瞬間。", "所謂愛，就是心底那份無需多言的安穩與依靠。", "每一處到過的遠方，都收藏著我們相愛的證明。", "願傾盡世間所有的溫柔，只為換妳一世安然。", "最浪漫的事，就是和你一起慢慢變老。", "無論未來是波瀾壯闊或平凡如水，只要身邊是妳，就好。", "未完待續的餘生，何其有幸，與妳同行。"];
+		const photo1= ["https://drive.google.com/thumbnail?id=1im2o7bx0AN0Qup9GXZe5tsqSqimCOG9T&sz=w2668", "https://drive.google.com/thumbnail?id=1aWQXmSKKypfhj69j22AFjUqgEausP0SY&sz=w2668", "https://drive.google.com/thumbnail?id=1aWQXmSKKypfhj69j22AFjUqgEausP0SY&sz=w2668", "https://drive.google.com/thumbnail?id=1yVFP0CG1GkJxDk3u2Wx1S2VyxffQ7c_2&sz=w2668", "https://drive.google.com/thumbnail?id=1AK3i9NanxUcSZj9oywLr6iRmb747WMkj&sz=w2668", "https://drive.google.com/thumbnail?id=1Lfp9YYYCJlesJX4SwBe4dyhPsv47lkfv&sz=w2668", "https://drive.google.com/thumbnail?id=1RCzqh5IT3MnNZtbE4fMOzssK8UKV-a21&sz=w2668", "https://drive.google.com/thumbnail?id=12jIkwgFWQzCSKlSeyBeThRxrMBd-q5cB&sz=w2668", "https://drive.google.com/thumbnail?id=1-shDoBdjW2ZidzK3Pbi6Icb0fYac7J-T&sz=w2668"];
         for (let i = 1; i < 10; i++) {
             const item = document.createElement('div');
             item.className = 'photo-item';
             item.innerHTML = `
-                <div class="img-box"><img src="img/${i+1}.jpg" loading="lazy"></div>
+                <div class="img-box"><img src=${photo1[i-1]} loading="lazy"></div>
                 <div class="text-box">
                     <div class="page-num">0${i}</div>
                     <div class="divider"></div>
